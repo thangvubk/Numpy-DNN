@@ -9,7 +9,7 @@ In this implementation, NO deep learning library is used.
 +-------------+    +--------+ |  +------+    +--------+    +--------+ |  +------+    +----------+    +-------+
                               |                                       |
                               +---------------------------------------+
-                                         Resudual connection
+                                         Residual connection
 ```
 
 ## Setup
