@@ -1,0 +1,5 @@
+data
+*.pyc
+*.ipynb
+.ipynb_checkpoints
+mnist.pkl.gz

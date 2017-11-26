@@ -1,6 +1,6 @@
 # Author: Thang Vu
 # Date: 25/Nov/2017
-# Description: Implement layers defined in HW1
+# Description: Implement layers and loss function for dnn
 
 import numpy as np
 
@@ -126,7 +126,7 @@ def conv_backward(dout, cache):
 
     return dx, dw, db
 
-def softmax_loss(x, y):
+def softmax_cross_entropy_loss(x, y):
     """
     x score shape (N, C)
     y label shape (N,)
@@ -143,9 +143,3 @@ def softmax_loss(x, y):
 
     return loss, dx
 
-
-    
-
-
-
-    
