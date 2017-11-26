@@ -1,8 +1,9 @@
 # Deep Neural Network implementation with Numpy
 
-This is my implementation of Computer Vision course at KAIST. 
+This is my implementation for Computer Vision course Homework at KAIST. 
 In this implementation, NO deep learning library is used. 
 
+My network architecture is
 ```
 +-------------+    +--------+    +------+    +--------+    +--------+    +------+    +----------+    +-------+
 | Input 28*28 |--->| fc 256 |-+->| Relu |--->|drop out|--->| fc 256 |-+->| ReLU |--->| Drop out |--->| fc 10 |
