@@ -6,7 +6,14 @@
 import numpy as np
 from layers import *
 class DNN(object):
-
+    """
+    +-------------+    +--------+    +------+    +--------+    +--------+    +------+    +----------+    +-------+
+    | Input 28*28 |--->| fc 256 |-+->| Relu |--->|drop out|--->| fc 256 |-+->| ReLU |--->| Drop out |--->| fc 10 |
+    +-------------+    +--------+ |  +------+    +--------+    +--------+ |  +------+    +----------+    +-------+
+                                  |                                       |
+                                  +---------------------------------------+
+                                              Residual connection
+    """
     def __init__(self):
         """ Initialize weight and bias """
         weight_scale = 1e-3
